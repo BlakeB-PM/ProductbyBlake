@@ -6,9 +6,7 @@ export function About() {
           {/* Left column - text */}
           <div>
             <h2 className="font-serif text-3xl md:text-4xl font-medium text-ink-900 mb-6">
-              I bridge the gap between{' '}
-              <span className="italic">vision</span> and{' '}
-              <span className="italic">execution.</span>
+              Most PMs write requirements and wait. I prototype, ship, and iterate.
             </h2>
             
             <div className="space-y-4 text-ink-600 leading-relaxed">
@@ -19,12 +17,12 @@ export function About() {
                 I built that too.
               </p>
               <p>
-                My background in <strong className="text-ink-800">Economics, Computer Science, and Mathematics</strong> from 
-                Texas Tech gives me not just the technical depth to have meaningful conversations with data scientists and engineers, 
-                but also the business acumen to translate that into customer outcomes.
+                My background in <strong className="text-ink-800">Economics, Computer Science, and Mathematics</strong> gives me 
+                the technical depth to keep up with data scientists and engineers, 
+                and the business sense to translate that into customer outcomes.
               </p>
               <p>
-                At ConstructConnect, I took an AI product from $200K to $1.2M+ ARR by doing relentless 
+                At ConstructConnect, I scaled an AI product 6x in under 12 months through obsessive 
                 customer discovery, not guessing at features. I introduced Continuous Discovery Habits, 
                 the Sean Ellis PMF test, and tools like Dovetail that are now used across the organization.
               </p>
@@ -40,7 +38,7 @@ export function About() {
             <TraitCard
               icon="🧠"
               title="AI-Native Workflow"
-              description="I use Cursor, Claude, and AI tooling daily. Both in the products I build and how I work. I've led AI steering committees and trained teams on context engineering."
+              description="My workflow is built on Cursor and Claude. I’ve moved beyond ''prompting'' to scaling teams with AI-first mental models and replacing manual cycles with high-velocity, automated tools."
             />
             
             <TraitCard
@@ -58,7 +56,7 @@ export function About() {
             <TraitCard
               icon="📈"
               title="Business Orientation"
-              description="Everything I build ties back to outcomes: revenue, adoption, retention. I've scaled products to $1M+ ARR and 40%+ PMF scores."
+              description="Everything I build ties back to outcomes: revenue, adoption, retention. I've scaled products 6x and hit 40%+ PMF scores."
             />
           </div>
         </div>

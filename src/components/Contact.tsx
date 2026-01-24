@@ -11,8 +11,8 @@ export function Contact() {
             Let's build something together.
           </h2>
           <p className="text-lg text-ink-600 mb-10">
-            I'm exploring senior product leadership roles where I can combine strategic thinking 
-            with hands-on building. If you're looking for a PM who ships, let's talk.
+            Looking for senior PM or product leadership roles. I want to lead teams and still 
+            get my hands dirty building. If that sounds useful, let's talk.
           </p>
 
           {/* Contact methods */}

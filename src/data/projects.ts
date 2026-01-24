@@ -33,7 +33,7 @@ export const projects: Project[] = [
     id: 'garminsights',
     title: 'GarminSights',
     tagline: 'Personal fitness analytics powered by AI',
-    problem: "Garmin's native app lacks deep analytics for strength training. I wanted to see my lifting progress, estimated 1RMs, and get AI-powered coaching based on my actual data.",
+    problem: "Garmin's app is weak on strength training and cycling analytics. I wanted to see my lifting progress, estimated 1RMs, and get AI-powered coaching based on my actual data.",
     solution: 'Built a full-stack dashboard that syncs with Garmin Connect, visualizes strength progress, and includes an AI coach that analyzes my real training patterns.',
     tech: ['React', 'TypeScript', 'FastAPI', 'SQLite', 'Claude API', 'Recharts', 'Tailwind CSS'],
     gradient: 'from-emerald-500 to-teal-600',

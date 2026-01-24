@@ -6,7 +6,7 @@ export function Experience() {
       period: 'July 2024 – Present',
       description: '2,000+ person pre-construction tech | >$180M revenue',
       highlights: [
-        'Scaled AI takeoff automation from $200K to $1.2M+ ARR in under 12 months',
+        'Scaled AI takeoff automation 6x in under 12 months',
         'Drove product-market fit from 12% to 40% through continuous discovery',
         'Led 2 cross-functional AI/ML teams (15+ engineers) building computer vision and LLM solutions',
         'Reduced workflow time from 3 days to 30 minutes through 20% accuracy improvements',
@@ -50,7 +50,7 @@ export function Experience() {
           </h2>
           <p className="text-ink-600 max-w-2xl">
             6+ years in B2B SaaS, from ERP modernization to AI-powered automation. 
-            Consistently growing revenue, leading teams, and shipping products customers love.
+            Consistently growing revenue, leading teams, and shipping products that delight customers.
           </p>
         </div>
 
