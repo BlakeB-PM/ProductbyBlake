@@ -16,7 +16,7 @@ export function Projects() {
           </h2>
           <p className="text-ink-600 max-w-2xl">
             Real problems. Real solutions. All built with Cursor and AI-assisted development. 
-            These aren't tutorials—they're tools I actually use.
+            These aren't tutorials. They're tools I actually use.
           </p>
         </div>
 

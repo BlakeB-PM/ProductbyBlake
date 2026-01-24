@@ -20,12 +20,12 @@ export function About() {
               </p>
               <p>
                 My background in <strong className="text-ink-800">Economics, Computer Science, and Mathematics</strong> from 
-                Texas Tech gives me the technical depth to have meaningful conversations with ML engineers 
-                about precision/recall tradeoffs, and the business acumen to translate that into customer outcomes.
+                Texas Tech gives me not just the technical depth to have meaningful conversations with data scientists and engineers, 
+                but also the business acumen to translate that into customer outcomes.
               </p>
               <p>
                 At ConstructConnect, I took an AI product from $200K to $1.2M+ ARR by doing relentless 
-                customer discovery—not guessing at features. I introduced Continuous Discovery Habits, 
+                customer discovery, not guessing at features. I introduced Continuous Discovery Habits, 
                 the Sean Ellis PMF test, and tools like Dovetail that are now used across the organization.
               </p>
             </div>
@@ -40,7 +40,7 @@ export function About() {
             <TraitCard
               icon="🧠"
               title="AI-Native Workflow"
-              description="I use Cursor, Claude, and AI tooling daily—both in the products I build and how I work. I've led AI steering committees and trained teams on context engineering."
+              description="I use Cursor, Claude, and AI tooling daily. Both in the products I build and how I work. I've led AI steering committees and trained teams on context engineering."
             />
             
             <TraitCard
@@ -58,7 +58,7 @@ export function About() {
             <TraitCard
               icon="📈"
               title="Business Orientation"
-              description="Everything I build ties back to outcomes—revenue, adoption, retention. I've scaled products to $1M+ ARR and 40%+ PMF scores."
+              description="Everything I build ties back to outcomes: revenue, adoption, retention. I've scaled products to $1M+ ARR and 40%+ PMF scores."
             />
           </div>
         </div>
