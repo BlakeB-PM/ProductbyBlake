@@ -17,7 +17,7 @@ if not exist "node_modules\" (
 
 echo [2/2] Starting development server...
 echo.
-echo    Local:   http://localhost:5173
+echo    Starting Vite...
 echo    Press Ctrl+C to stop
 echo.
 
