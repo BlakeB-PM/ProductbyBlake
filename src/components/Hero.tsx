@@ -40,14 +40,14 @@ export function Hero() {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap justify-center md:justify-start gap-3 sm:gap-4 animate-slide-up animation-delay-300">
+            <div className="flex flex-wrap justify-center md:justify-start gap-4 sm:gap-6 animate-slide-up animation-delay-300">
               <a
-                href="#projects"
+                href="#experience"
                 className="inline-flex items-center gap-1.5 sm:gap-2 px-5 py-2.5 sm:px-6 sm:py-3 bg-ink-900 text-ink-50 font-medium rounded-lg hover:bg-ink-800 transition-colors text-sm sm:text-base"
               >
-                See what I've built
+                See the impact
                 <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </a>
               <a

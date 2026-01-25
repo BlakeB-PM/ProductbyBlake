@@ -1,7 +1,9 @@
 import { Hero } from './Hero'
 import { About } from './About'
-import { Projects } from './Projects'
 import { Experience } from './Experience'
+import { Transition } from './Transition'
+import { Projects } from './Projects'
+import { SkillsEducation } from './SkillsEducation'
 import { Contact } from './Contact'
 
 export function HomePage() {
@@ -9,8 +11,10 @@ export function HomePage() {
     <>
       <Hero />
       <About />
-      <Projects />
       <Experience />
+      <Transition />
+      <Projects />
+      <SkillsEducation />
       <Contact />
     </>
   )
