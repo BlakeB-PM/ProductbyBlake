@@ -19,15 +19,6 @@ export function Footer() {
           </p>
           <p className="font-mono text-xs">
             <span className="text-ink-400">v2.0</span>
-            {' · '}
-            <a
-              href="https://github.com/BlakeB-PM"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-ink-600 hover:text-accent transition-colors"
-            >
-              View source on GitHub
-            </a>
           </p>
         </div>
       </div>

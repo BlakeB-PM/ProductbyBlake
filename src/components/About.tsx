@@ -11,14 +11,14 @@ export function About() {
             
             <div className="space-y-4 text-ink-600 leading-relaxed">
               <p>
-                Most PMs write requirements and wait. I prototype in code, validate with real users, 
+                I prototype in Cursor, validate with real users, 
                 and ship alongside my engineering teams. When I needed a fitness dashboard that 
                 Garmin couldn't provide, I built one. When my dad needed a website for his business, 
                 I built that too.
               </p>
               <p>
                 My background in <strong className="text-ink-800">Economics, Computer Science, and Mathematics</strong> gives me 
-                the technical depth to keep up with data scientists and engineers, 
+                the technical depth to keep up with data scientists and engineers 
                 and the business sense to translate that into customer outcomes.
               </p>
               <p>
@@ -56,7 +56,7 @@ export function About() {
             <TraitCard
               icon="📈"
               title="Business Orientation"
-              description="Everything I build ties back to outcomes: revenue, adoption, retention. I've scaled products 6x and hit 40%+ PMF scores."
+              description="Everything I build ties back to outcomes: revenue, adoption, retention. I've scaled products 6x and hit 53%+ PMF scores."
             />
           </div>
         </div>

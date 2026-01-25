@@ -2,37 +2,36 @@ export function Experience() {
   const experiences = [
     {
       company: 'ConstructConnect',
-      role: 'Product Manager, AI',
+      role: 'Product Manager → Senior Product Manager, AI',
       period: 'July 2024 – Present',
       description: '2,000+ person pre-construction tech | >$180M revenue',
       highlights: [
         'Scaled AI takeoff automation 6x in under 12 months',
-        'Drove product-market fit from 12% to 40% through continuous discovery',
+        'Drove product-market fit from 12% to 53% through continuous discovery',
         'Led 2 cross-functional AI/ML teams (15+ engineers) building computer vision and LLM solutions',
-        'Reduced workflow time from 3 days to 30 minutes through 20% accuracy improvements',
+        'Reduced workflow time from 3 days to 30 minutes through 20% increase in accuracy improvements',
       ],
     },
     {
       company: 'Rightworks',
-      role: 'Product Owner / Product Manager',
+      role: 'Product Manager / Product Owner',
       period: 'Aug 2023 – July 2024',
       description: '700+ person accounting cloud services | >$73M revenue',
       highlights: [
         'Consolidated 2 RESTful API services into unified platform architecture',
         'Designed scalable data pipeline for centralized access across accounting systems',
-        'Led 3 agile teams through product launch achieving 800+ users in 4 months',
+        'Led 3 agile teams through product launch achieving 800+ users at launch',
       ],
     },
     {
       company: 'Tyler Technologies',
-      role: 'Product Owner → Lead Analyst → Analyst',
+      role: 'Product Analyst → Lead Analyst → Product Manager / Owner',
       period: 'May 2019 – July 2023',
       description: '7,000+ person government tech | >$1.2B revenue',
       highlights: [
+        'Modernized 50+ cities in year one by launching an ERP Community Development product',
         'Unified 5 ERP products into one mobile app for thousands of city employees',
         'Directed product across 5 development teams (30+ engineers)',
-        'Led rollout of ERP Community Development product modernizing 50+ cities in year one',
-        'Designed account manager interface in Figma with usability testing',
       ],
     },
   ]
@@ -66,8 +65,27 @@ export function Experience() {
           </div>
         </div>
 
-        {/* Education */}
+        {/* Skills */}
         <div className="mt-20 pt-12 border-t border-ink-100">
+          <p className="font-mono text-xs uppercase tracking-widest text-ink-400 mb-6">Skills & Tools</p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <SkillCategory
+              title="AI/ML Concepts"
+              skills={['Model evaluation (Precision, Recall, F1)', 'Computer Vision', 'LLMs & Prompt Engineering']}
+            />
+            <SkillCategory
+              title="Technical"
+              skills={['Python', 'SQL', 'Cursor', 'GitHub', 'RESTful APIs', 'Postman', 'Data Pipelines']}
+            />
+            <SkillCategory
+              title="Product Tools"
+              skills={['Dovetail', 'Jira', 'Confluence', 'Figma', 'Pendo', 'Claude', 'Notion']}
+            />
+          </div>
+        </div>
+
+        {/* Education */}
+        <div className="mt-12 pt-12 border-t border-ink-100">
           <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
             <div className="flex-shrink-0">
               <span className="font-mono text-xs uppercase tracking-widest text-ink-400">Education</span>
@@ -83,25 +101,6 @@ export function Experience() {
             <div className="text-ink-500 text-sm">
               December 2019
             </div>
-          </div>
-        </div>
-
-        {/* Skills */}
-        <div className="mt-12 pt-12 border-t border-ink-100">
-          <p className="font-mono text-xs uppercase tracking-widest text-ink-400 mb-6">Skills & Tools</p>
-          <div className="grid md:grid-cols-3 gap-6">
-            <SkillCategory
-              title="AI/ML Concepts"
-              skills={['Model evaluation (Precision, Recall, F1)', 'Computer Vision', 'LLMs & Prompt Engineering']}
-            />
-            <SkillCategory
-              title="Technical"
-              skills={['Python', 'SQL', 'Cursor', 'GitHub', 'RESTful APIs', 'Postman', 'Data Pipelines']}
-            />
-            <SkillCategory
-              title="Product Tools"
-              skills={['Dovetail', 'Jira', 'Confluence', 'Figma', 'Pendo', 'Claude', 'Notion']}
-            />
           </div>
         </div>
       </div>

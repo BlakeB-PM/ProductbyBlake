@@ -10,10 +10,6 @@ export function Contact() {
           <h2 className="font-serif text-3xl md:text-4xl font-medium text-ink-900 mb-6">
             Let's build something together.
           </h2>
-          <p className="text-lg text-ink-600 mb-10">
-            Looking for senior PM or product leadership roles. I want to lead teams and still 
-            get my hands dirty building. If that sounds useful, let's talk.
-          </p>
 
           {/* Contact methods */}
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">

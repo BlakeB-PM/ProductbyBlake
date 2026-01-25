@@ -22,9 +22,7 @@ export function Hero() {
 
             {/* Main headline */}
             <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-medium leading-[1.1] text-ink-900 mb-4 sm:mb-6 animate-slide-up break-words">
-              A Product Manager{' '}
-              <span className="text-ink-400">who</span>{' '}
-              builds.
+              Product Manager. Builder.{' '}
             </h1>
 
             {/* Subheadline */}
@@ -38,7 +36,7 @@ export function Hero() {
             <div className="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-4 sm:gap-12 mb-8 sm:mb-12 animate-slide-up animation-delay-200">
               <Stat value="6x" label="ARR growth" />
               <Stat value="3x" label="User productivity" />
-              <Stat value="15+" label="Engineers led" />
+              <Stat value="83%" label="Feature adoption" />
             </div>
 
             {/* CTA Buttons */}
