@@ -17,9 +17,9 @@ export function About() {
                 I built that too.
               </p>
               <p>
-                At ConstructConnect, I scaled ARR for an AI product 6x in under 12 months through obsessive 
-                customer discovery. I introduced Continuous Discovery Habits, 
-                the Sean Ellis PMF test, and tools like Dovetail that are now used across the organization.
+                At ConstructConnect, I scaled an AI product 6x in under 12 months. By implementing Continuous
+                Discovery Habits and rigorous PMF testing, I doubled the market share of a key customer segment
+                and drove a 49% increase in cohort engagement within a single month.
               </p>
               <p>
                 My background in <strong className="text-ink-800">Economics, Computer Science, and Mathematics</strong> allows me 
