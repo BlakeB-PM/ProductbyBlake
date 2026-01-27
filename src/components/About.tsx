@@ -17,14 +17,14 @@ export function About() {
                 I built that too.
               </p>
               <p>
+                At ConstructConnect, I scaled ARR for an AI product 6x in under 12 months through obsessive 
+                customer discovery. I introduced Continuous Discovery Habits, 
+                the Sean Ellis PMF test, and tools like Dovetail that are now used across the organization.
+              </p>
+              <p>
                 My background in <strong className="text-ink-800">Economics, Computer Science, and Mathematics</strong> allows me 
                 to speak the language of data scientist and engineers while maintaining a rigorous focus on  delivering
                 customer-centric business outcomes.
-              </p>
-              <p>
-                At ConstructConnect, I scaled an AI product 6x in under 12 months through obsessive 
-                customer discovery, not guessing at features. I introduced Continuous Discovery Habits, 
-                the Sean Ellis PMF test, and tools like Dovetail that are now used across the organization.
               </p>
             </div>
           </div>
@@ -44,19 +44,19 @@ export function About() {
             <TraitCard
               icon="🔬"
               title="Discovery-Obsessed"
-              description="I don't guess, I test. Customer interviews, PMF surveys, usage analytics. I've built networks of customers who become advocates and beta testers."
+              description="I don't guess, I test. Using rigorous discovery, I boosted cohort engagement by nearly 50% in a single month and built networks of advocates who serve as lifelong beta testers."
+            />
+            
+            <TraitCard
+              icon="📈"
+              title="Business Orientation"
+              description="Everything I build ties back to outcomes. I’ve scaled products 6x, doubled the share of key user segments (15% to 33%), and hit 53%+ PMF scores."
             />
             
             <TraitCard
               icon="🛠️"
               title="Technical Fluency"
               description="Python, SQL, RESTful APIs, Figma, data pipelines. I can read code, build prototypes, and speak the language of my engineering teams."
-            />
-            
-            <TraitCard
-              icon="📈"
-              title="Business Orientation"
-              description="Everything I build ties back to outcomes: revenue, adoption, retention. I've scaled products 6x and hit 53%+ PMF scores."
             />
           </div>
         </div>

@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <section className="pt-16 pb-16 sm:pt-24 sm:pb-20 md:min-h-screen md:flex md:items-center md:justify-center relative overflow-hidden">
+    <section className="pt-24 pb-16 sm:pt-24 sm:pb-20 md:min-h-screen md:flex md:items-center md:justify-center relative overflow-hidden">
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div 
@@ -28,7 +28,7 @@ export function Hero() {
           {/* Text Content - Order 1 on desktop */}
           <div className="md:order-1 md:flex-1">
             {/* Intro line */}
-            <p className="font-mono text-xs sm:text-sm text-ink-500 mb-1 sm:mb-4 animate-fade-in">
+            <p className="font-mono text-xs sm:text-sm text-ink-500 mb-3 sm:mb-4 animate-fade-in">
               Hi, I'm Blake.
             </p>
 
@@ -50,7 +50,7 @@ export function Hero() {
               <div className="flex justify-start gap-8 sm:gap-12 md:gap-16 mb-8 sm:mb-10 animate-slide-up animation-delay-200">
                 <Stat value="6x" label="ARR growth" />
                 <Stat value="3x" label="User productivity" />
-                <Stat value="83%" label="Feature adoption" />
+                <Stat value="74.5%" label="Engagement lift" />
               </div>
 
               {/* CTA Buttons */}
