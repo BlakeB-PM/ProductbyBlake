@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <section className="pt-20 pb-16 sm:pt-24 sm:pb-20 md:min-h-screen md:flex md:items-center md:justify-center relative overflow-hidden">
+    <section className="pt-16 pb-16 sm:pt-24 sm:pb-20 md:min-h-screen md:flex md:items-center md:justify-center relative overflow-hidden">
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div 
@@ -17,13 +17,13 @@ export function Hero() {
           {/* Headline - Left side */}
           <div className="flex-1">
             {/* Intro line */}
-            <p className="font-mono text-xs sm:text-sm text-ink-500 mb-2 sm:mb-4 animate-fade-in">
+            <p className="font-mono text-xs sm:text-sm text-ink-500 mb-1 sm:mb-4 animate-fade-in">
               Hi, I'm Blake.
             </p>
 
             {/* Main headline */}
-            <h1 className="font-serif text-2xl xs:text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-medium leading-[1.1] text-ink-900 animate-slide-up break-words">
-              Product&nbsp;Manager. Builder.
+            <h1 className="font-serif text-4xl xs:text-5xl sm:text-6xl lg:text-7xl font-medium leading-[1.1] text-ink-900 animate-slide-up break-words">
+              Product<br className="sm:hidden" /> Manager.<br className="sm:hidden" /> Builder.
             </h1>
           </div>
 
