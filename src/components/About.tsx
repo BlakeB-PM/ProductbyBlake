@@ -6,7 +6,7 @@ export function About() {
           {/* Left column - text */}
           <div>
             <h2 className="font-serif text-3xl md:text-4xl font-medium text-ink-900 mb-6">
-              Most PMs write requirements and wait. I prototype, ship, and iterate.
+              High-velocity product management. I leverage AI-native workflows to shrink the gap between idea and impact.
             </h2>
             
             <div className="space-y-4 text-ink-600 leading-relaxed">
@@ -17,9 +17,9 @@ export function About() {
                 I built that too.
               </p>
               <p>
-                My background in <strong className="text-ink-800">Economics, Computer Science, and Mathematics</strong> gives me 
-                the technical depth to keep up with data scientists and engineers 
-                and the business sense to translate that into customer outcomes.
+                My background in <strong className="text-ink-800">Economics, Computer Science, and Mathematics</strong> allows me 
+                to speak the language of data scientist and engineers while maintaining a rigorous focus on  delivering
+                customer-centric business outcomes.
               </p>
               <p>
                 At ConstructConnect, I scaled an AI product 6x in under 12 months through obsessive 
