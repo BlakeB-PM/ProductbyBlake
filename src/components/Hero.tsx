@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center pt-16 pb-24 relative overflow-hidden">
+    <section className="pt-20 pb-16 sm:pt-24 sm:pb-20 md:min-h-screen md:flex md:items-center md:justify-center relative overflow-hidden">
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div 
@@ -12,9 +12,9 @@ export function Hero() {
       </div>
 
       <div className="section-container">
-        <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-16">
+        <div className="flex flex-row items-start justify-between gap-4 sm:gap-8 md:gap-16">
           {/* Text content - Left side */}
-          <div className="flex-1 max-w-2xl text-center md:text-left">
+          <div className="flex-1 max-w-2xl text-left">
             {/* Intro line */}
             <p className="font-mono text-xs sm:text-sm text-ink-500 mb-2 sm:mb-4 animate-fade-in">
               Hi, I'm Blake.
@@ -26,21 +26,21 @@ export function Hero() {
             </h1>
 
             {/* Subheadline */}
-            <p className="text-sm sm:text-lg md:text-xl text-ink-600 leading-relaxed mb-6 sm:mb-10 animate-slide-up animation-delay-100 mx-auto md:mx-0 max-w-lg md:max-w-none">
+            <p className="text-sm sm:text-lg md:text-xl text-ink-600 leading-relaxed mb-6 sm:mb-10 animate-slide-up animation-delay-100">
               6+ years shipping B2B SaaS. I use{' '}
               <span className="font-medium text-ink-800">AI tools like Cursor</span>{' '}
               to prototype in code, validate with real users, and ship alongside my engineering teams.
             </p>
 
             {/* Stats row */}
-            <div className="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-4 sm:gap-12 mb-8 sm:mb-12 animate-slide-up animation-delay-200">
+            <div className="flex flex-wrap justify-start gap-x-6 gap-y-4 sm:gap-12 mb-8 sm:mb-12 animate-slide-up animation-delay-200">
               <Stat value="6x" label="ARR growth" />
               <Stat value="3x" label="User productivity" />
               <Stat value="83%" label="Feature adoption" />
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap justify-center md:justify-start gap-4 sm:gap-6 animate-slide-up animation-delay-300">
+            <div className="flex flex-wrap justify-start gap-4 sm:gap-6 animate-slide-up animation-delay-300">
               <a
                 href="#experience"
                 className="inline-flex items-center gap-1.5 sm:gap-2 px-5 py-2.5 sm:px-6 sm:py-3 bg-ink-900 text-ink-50 font-medium rounded-lg hover:bg-ink-800 transition-colors text-sm sm:text-base"
@@ -60,8 +60,8 @@ export function Hero() {
           </div>
 
           {/* Headshot - Right side */}
-          <div className="flex-shrink-0 w-32 sm:w-48 lg:w-72 xl:w-80 animate-fade-in mt-2 md:mt-0">
-            <div className="aspect-square rounded-2xl overflow-hidden shadow-xl border border-ink-200 transition-transform duration-300">
+          <div className="flex-shrink-0 w-32 sm:w-44 md:w-56 lg:w-72 xl:w-80 animate-fade-in">
+            <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl border border-ink-200 transition-transform duration-300">
               <img 
                 src="/headshot.jpg" 
                 alt="Blake Beal" 
