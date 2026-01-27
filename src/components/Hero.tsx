@@ -22,8 +22,8 @@ export function Hero() {
             </p>
 
             {/* Main headline */}
-            <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-medium leading-[1.1] text-ink-900 animate-slide-up break-words">
-              Product Manager. Builder.
+            <h1 className="font-serif text-2xl xs:text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-medium leading-[1.1] text-ink-900 animate-slide-up break-words">
+              Product&nbsp;Manager. Builder.
             </h1>
           </div>
 
