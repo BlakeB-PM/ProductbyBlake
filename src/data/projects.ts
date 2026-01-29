@@ -110,9 +110,10 @@ Write about:
     title: 'Aura',
     tagline: "Baby's first words, preserved forever",
     problem: "My daughter started saying her first words. I wanted a way to capture and replay these precious moments. A digital keepsake our family could enjoy.",
-    solution: 'A beautiful soundboard web app where parents upload audio clips of their child\'s words. Tap a button, hear the memory. Simple, delightful, personal.',
+    solution: 'A beautiful soundboard web app that transforms raw audio clips into a structured family asset. The platform leverages a GCS-backed infrastructure to store files securely, ensuring that every "first word" is captured, protected, and instantly accessible via a custom Web Audio API interface.',
     tech: ['GCS', 'React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Web Audio API', 'Node.js'],
     gradient: 'from-pink-500 to-rose-600',
+    image: '/projects/aura-preview.png',
     story: {
       origin: {
         title: 'The Origin',
