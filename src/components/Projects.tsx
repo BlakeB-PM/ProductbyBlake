@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 import { projects } from '../data/projects'
 import type { Project } from '../data/projects'
 
@@ -33,6 +34,7 @@ export function Projects() {
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
   const isEven = index % 2 === 0
+  const [isImageOpen, setIsImageOpen] = useState(false)
 
   return (
     <article 
@@ -41,32 +43,76 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       }`}
     >
       {/* Screenshot placeholder */}
-      <Link 
-        to={`/project/${project.id}`}
+      <div 
         className={`group ${isEven ? '' : 'md:col-start-2'}`}
       >
         <div 
           className={`aspect-video rounded-2xl bg-gradient-to-br ${project.gradient} p-1 transition-transform group-hover:scale-[1.02]`}
         >
           <div className="w-full h-full rounded-xl bg-ink-900/90 flex items-center justify-center relative overflow-hidden">
-            <div className="text-center p-8">
-              <div className="w-16 h-16 rounded-xl bg-white/10 mx-auto mb-4 flex items-center justify-center">
-                <svg className="w-8 h-8 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <p className="text-sm font-medium text-white/70">Screenshot placeholder</p>
-              <p className="text-xs text-white/40 mt-1">{project.title}</p>
-            </div>
-            {/* Hover overlay */}
-            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
-              <span className="px-4 py-2 bg-white rounded-lg text-ink-900 font-medium text-sm shadow-lg">
-                View case study →
-              </span>
-            </div>
+            {project.image ? (
+              <button 
+                onClick={() => setIsImageOpen(true)}
+                className="w-full h-full block cursor-zoom-in"
+              >
+                <img 
+                  src={project.image} 
+                  alt={project.title} 
+                  className="w-full h-full object-contain bg-ink-950 opacity-90 transition-opacity group-hover:opacity-100"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center pointer-events-none">
+                  <span className="opacity-0 group-hover:opacity-100 bg-white/90 text-ink-900 px-4 py-2 rounded-full text-sm font-medium shadow-lg transition-opacity">
+                    Click to enlarge
+                  </span>
+                </div>
+              </button>
+            ) : (
+              <Link to={`/project/${project.id}`} className="w-full h-full block">
+                <div className="w-full h-full flex items-center justify-center flex-col">
+                  <div className="w-16 h-16 rounded-xl bg-white/10 mx-auto mb-4 flex items-center justify-center">
+                    <svg className="w-8 h-8 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-sm font-medium text-white/70">Screenshot placeholder</p>
+                    <p className="text-xs text-white/40 mt-1">{project.title}</p>
+                  </div>
+                  {/* Hover overlay for placeholder */}
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
+                    <span className="px-4 py-2 bg-white rounded-lg text-ink-900 font-medium text-sm shadow-lg">
+                      View case study →
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            )}
           </div>
         </div>
-      </Link>
+      </div>
+
+      {/* Image Modal */}
+      {isImageOpen && project.image && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm"
+          onClick={() => setIsImageOpen(false)}
+        >
+          <button 
+            onClick={() => setIsImageOpen(false)}
+            className="absolute top-4 right-4 text-white/70 hover:text-white transition-colors"
+          >
+            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          <img 
+            src={project.image} 
+            alt={project.title} 
+            className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
 
       {/* Content */}
       <div className={isEven ? '' : 'md:col-start-1 md:row-start-1'}>

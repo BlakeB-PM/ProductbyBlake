@@ -17,13 +17,15 @@ export function About() {
                 I built that too.
               </p>
               <p>
-                At ConstructConnect, I scaled an AI product 6x in under 12 months. By implementing Continuous
-                Discovery Habits and rigorous PMF testing, I doubled the market share of a key customer segment
-                and drove a 49% increase in cohort engagement within a single month.
+                At <strong className="text-ink-800">ConstructConnect</strong>, I accelerated an AI product's growth 6x in under 12 months. By
+                embedding continuous discovery into our cycles, I doubled the market share of a key
+                customer segment and boosted cohort engagement by 49%. Prior to that, I spearheaded
+                the digital transformation of 50+ U.S. cities at <strong className="text-ink-800">Tyler Technologies</strong>, directing the
+                national rollout of critical ERP and mobile platforms to modernize citizen engagement
               </p>
               <p>
-                My background in <strong className="text-ink-800">Economics, Computer Science, and Mathematics</strong> allows me 
-                to speak the language of data scientist and engineers while maintaining a rigorous focus on  delivering
+                My background in <strong className="text-ink-800">economics, computer science, and mathematics</strong> allows me 
+                to speak the language of data scientists and engineers while maintaining a rigorous focus on  delivering
                 customer-centric business outcomes.
               </p>
             </div>
@@ -38,7 +40,7 @@ export function About() {
             <TraitCard
               icon="🧠"
               title="AI-Native Workflow"
-              description="My workflow is built on Cursor and Claude. I’ve moved beyond ''prompting'' to scaling teams with AI-first mental models and replacing manual cycles with high-velocity, automated tools."
+              description="My workflow is built on Cursor and Claude. I’ve moved beyond ''prompting'' to scaling teams with AI-first mental models, rapid prototyping, and replacing manual cycles with high-velocity, automated tools."
             />
             
             <TraitCard
@@ -50,13 +52,13 @@ export function About() {
             <TraitCard
               icon="📈"
               title="Business Orientation"
-              description="Everything I build ties back to outcomes. I’ve scaled products 6x, doubled the share of key user segments (15% to 33%), and hit 53%+ PMF scores."
+              description="Everything I build ties back to outcomes. I’ve scaled products 6x, doubled the share of key user segments (15% to 33%), and achieved sustainable product-market fit through rigorous iterations."
             />
             
             <TraitCard
               icon="🛠️"
               title="Technical Fluency"
-              description="Python, SQL, RESTful APIs, Figma, data pipelines. I can read code, build prototypes, and speak the language of my engineering teams."
+              description="I bridge the gap between product vision and engineering constraints by understanding system architecture, data flows, and technical feasibility."
             />
           </div>
         </div>

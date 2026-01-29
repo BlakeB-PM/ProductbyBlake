@@ -102,7 +102,7 @@ V2 Portfolio/
 - `/project/garminsights` — GarminSights case study
 - `/project/hearth` — Hearth case study
 - `/project/whispertranscribe` — WhisperTranscribe case study
-- `/project/vboard` — V Board case study
+- `/project/aura` — Aura case study
 - `/project/bealglass` — Beal Glass case study
 
 ## License

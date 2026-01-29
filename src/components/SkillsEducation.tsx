@@ -8,15 +8,15 @@ export function SkillsEducation() {
           <div className="grid md:grid-cols-3 gap-6">
             <SkillCategory
               title="AI/ML Concepts"
-              skills={['Model evaluation (Precision, Recall, F1)', 'Computer Vision', 'LLMs & Prompt Engineering']}
+              skills={['Model evaluation (precision/recall/F1)', 'Computer vision', 'Data curation', 'Human-in-the-loop workflows']}
             />
             <SkillCategory
               title="Technical"
-              skills={['Python', 'SQL', 'Cursor', 'GitHub', 'RESTful APIs', 'Postman', 'Data Pipelines']}
+              skills={['Cursor', 'GCP', 'Hex', 'Python', 'SQL', 'APIs', 'Claude Code', 'Postman', 'Data pipelines']}
             />
             <SkillCategory
               title="Product Tools"
-              skills={['Dovetail', 'Jira', 'Confluence', 'Figma', 'Pendo', 'Claude', 'Notion']}
+              skills={['Dovetail', 'Jira', 'Confluence', 'Figma', 'Pendo', 'Claude/Gemini', 'Notion', 'Continous discovery']}
             />
           </div>
         </div>

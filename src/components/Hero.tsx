@@ -54,21 +54,30 @@ export function Hero() {
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-row gap-4 sm:gap-6 animate-slide-up animation-delay-300">
+              <div className="flex flex-wrap gap-4 animate-slide-up animation-delay-300">
                 <a
                   href="#experience"
                   className="inline-flex items-center gap-1.5 sm:gap-2 px-5 py-2.5 sm:px-6 sm:py-3 bg-ink-900 text-ink-50 font-medium rounded-lg hover:bg-ink-800 transition-colors text-sm sm:text-base"
                 >
-                  See the impact
+                  Career impact
                   <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </a>
                 <a
-                  href="#contact"
+                  href="#projects"
                   className="inline-flex items-center gap-1.5 sm:gap-2 px-5 py-2.5 sm:px-6 sm:py-3 border border-ink-300 text-ink-700 font-medium rounded-lg hover:border-ink-400 hover:text-ink-900 transition-colors text-sm sm:text-base"
                 >
+                  View projects
+                </a>
+                <a
+                  href="#contact"
+                  className="group inline-flex items-center gap-1.5 sm:gap-2 px-5 py-2.5 sm:px-6 sm:py-3 bg-ink-100 text-ink-700 font-medium rounded-lg hover:bg-ink-200 hover:text-ink-900 transition-colors text-sm sm:text-base"
+                >
                   Get in touch
+                  <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 opacity-70 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
                 </a>
               </div>
             </div>

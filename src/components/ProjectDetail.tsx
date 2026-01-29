@@ -1,10 +1,12 @@
 import { useParams, Link, Navigate } from 'react-router-dom'
+import { useState } from 'react'
 import { getProjectById } from '../data/projects'
 import type { ProjectSection } from '../data/projects'
 
 export function ProjectDetail() {
   const { id } = useParams<{ id: string }>()
   const project = id ? getProjectById(id) : undefined
+  const [isImageOpen, setIsImageOpen] = useState(false)
 
   if (!project) {
     return <Navigate to="/" replace />
@@ -80,19 +82,60 @@ export function ProjectDetail() {
       {/* Screenshot placeholder */}
       <div className="section-container -mt-8 md:-mt-12 relative z-10">
         <div className="aspect-video rounded-2xl bg-ink-900 shadow-2xl overflow-hidden border-4 border-white">
-          <div className="w-full h-full flex items-center justify-center bg-ink-800">
-            <div className="text-center p-8">
-              <div className="w-20 h-20 rounded-xl bg-white/10 mx-auto mb-4 flex items-center justify-center">
-                <svg className="w-10 h-10 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
+          {project.image ? (
+            <button 
+              onClick={() => setIsImageOpen(true)}
+              className="w-full h-full block cursor-zoom-in relative group"
+            >
+              <img 
+                src={project.image} 
+                alt={project.title} 
+                className="w-full h-full object-contain bg-ink-950"
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+                <span className="opacity-0 group-hover:opacity-100 bg-white/90 text-ink-900 px-4 py-2 rounded-full text-sm font-medium shadow-lg transition-opacity">
+                  Click to enlarge
+                </span>
               </div>
-              <p className="text-lg font-medium text-white/70">Project screenshot</p>
-              <p className="text-sm text-white/40 mt-1">Add to public/projects/{project.id}.png</p>
+            </button>
+          ) : (
+            <div className="w-full h-full flex items-center justify-center bg-ink-800">
+              <div className="text-center p-8">
+                <div className="w-20 h-20 rounded-xl bg-white/10 mx-auto mb-4 flex items-center justify-center">
+                  <svg className="w-10 h-10 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <p className="text-lg font-medium text-white/70">Project screenshot</p>
+                <p className="text-sm text-white/40 mt-1">Add to public/projects/{project.id}.png</p>
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
+
+      {/* Image Modal */}
+      {isImageOpen && project.image && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm"
+          onClick={() => setIsImageOpen(false)}
+        >
+          <button 
+            onClick={() => setIsImageOpen(false)}
+            className="absolute top-4 right-4 text-white/70 hover:text-white transition-colors"
+          >
+            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          <img 
+            src={project.image} 
+            alt={project.title} 
+            className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
 
       {/* Content */}
       <div className="section-container py-16 md:py-24">
