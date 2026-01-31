@@ -184,10 +184,11 @@ Write about:
     id: 'bealglass',
     title: 'Beal Glass',
     tagline: 'Professional web presence for family business',
-    problem: "My dad's auto glass repair business in Odessa, TX needed a professional online presence to compete with larger shops and make it easy for customers to request quotes.",
-    solution: 'A clean, mobile-first business website with services showcase, trust signals, and a quote request form. Designed to convert visitors into calls.',
-    tech: ['HTML', 'Tailwind CSS', 'Responsive Design', 'JavaScript'],
+    problem: "My dad's auto glass repair business needed a professional online presence to compete with larger shops and make it easy for customers to request quotes.",
+    solution: 'A clean, mobile-first business website with services showcase, trust signals, and a quote request form. Used Nano Banana to generate realistic work photos of my dad in action since we didn\'t have any professional shots. Designed to convert visitors into calls.',
+    tech: ['Nano Banana', 'HTML', 'Tailwind CSS', 'Responsive Design', 'JavaScript'],
     gradient: 'from-sky-500 to-blue-600',
+    image: '/projects/beal-glass-preview.png',
     story: {
       origin: {
         title: 'The Origin',
@@ -336,6 +337,7 @@ Write about:
     solution: 'A desktop app using whisper.cpp for local transcription. Press Ctrl+Shift+H anywhere, speak, and text appears in your active window. No cloud, no latency.',
     tech: ['Electron', 'React', 'TypeScript', 'FastAPI', 'whisper.cpp', 'Python', 'Tailwind CSS'],
     gradient: 'from-violet-500 to-purple-600',
+    image: '/projects/whisperscribe-preview.png',
     story: {
       origin: {
         title: 'The Origin',

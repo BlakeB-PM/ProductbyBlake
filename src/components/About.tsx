@@ -21,7 +21,7 @@ export function About() {
                 embedding continuous discovery into our cycles, I doubled the market share of a key
                 customer segment and boosted cohort engagement by 49%. Prior to that, I spearheaded
                 the digital transformation of 50+ U.S. cities at <strong className="text-ink-800">Tyler Technologies</strong>, directing the
-                national rollout of critical ERP and mobile platforms to modernize citizen engagement
+                national rollout of critical ERP and mobile platforms to modernize citizen engagement.
               </p>
               <p>
                 My background in <strong className="text-ink-800">economics, computer science, and mathematics</strong> allows me 
