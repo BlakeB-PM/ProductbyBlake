@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { projects } from '../data/projects'
 import type { Project } from '../data/projects'
@@ -67,25 +66,17 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                 </div>
               </button>
             ) : (
-              <Link to={`/project/${project.id}`} className="w-full h-full block">
-                <div className="w-full h-full flex items-center justify-center flex-col">
-                  <div className="w-16 h-16 rounded-xl bg-white/10 mx-auto mb-4 flex items-center justify-center">
-                    <svg className="w-8 h-8 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                  </div>
-                  <div className="text-center">
-                    <p className="text-sm font-medium text-white/70">Screenshot placeholder</p>
-                    <p className="text-xs text-white/40 mt-1">{project.title}</p>
-                  </div>
-                  {/* Hover overlay for placeholder */}
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
-                    <span className="px-4 py-2 bg-white rounded-lg text-ink-900 font-medium text-sm shadow-lg">
-                      View case study →
-                    </span>
-                  </div>
+              <div className="w-full h-full flex items-center justify-center flex-col">
+                <div className="w-16 h-16 rounded-xl bg-white/10 mx-auto mb-4 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
                 </div>
-              </Link>
+                <div className="text-center">
+                  <p className="text-sm font-medium text-white/70">Screenshot placeholder</p>
+                  <p className="text-xs text-white/40 mt-1">{project.title}</p>
+                </div>
+              </div>
             )}
           </div>
         </div>
@@ -122,11 +113,9 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           </span>
         </div>
         
-        <Link to={`/project/${project.id}`}>
-          <h3 className="font-serif text-2xl md:text-3xl font-medium text-ink-900 mb-4 hover:text-accent transition-colors">
-            {project.title}
-          </h3>
-        </Link>
+        <h3 className="font-serif text-2xl md:text-3xl font-medium text-ink-900 mb-4">
+          {project.title}
+        </h3>
 
         <div className="space-y-4 mb-6">
           <div>
@@ -151,16 +140,12 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           ))}
         </div>
 
-        {/* Read more link */}
-        <Link
-          to={`/project/${project.id}`}
-          className="inline-flex items-center gap-2 text-accent font-medium hover:gap-3 transition-all"
+        {/* Coming soon placeholder */}
+        <span
+          className="inline-flex items-center gap-2 text-ink-400 font-medium cursor-default"
         >
-          Read the full story
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-          </svg>
-        </Link>
+          Full story coming soon
+        </span>
       </div>
     </article>
   )
