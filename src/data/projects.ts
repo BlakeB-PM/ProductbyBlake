@@ -261,6 +261,7 @@ Write about:
     tagline: 'Your weekly content digest, curated by AI',
     problem: 'Newsletter fatigue. I subscribe to 10+ newsletters but never read them. Content is scattered across platforms with no unified reading experience.',
     solution: 'A content aggregation platform that pulls newsletters from Gmail, uses Claude to summarize them, and presents everything in a beautiful magazine-style weekly digest.',
+    image: '/projects/hearth-preview.png',
     tech: ['React', 'TypeScript', 'FastAPI', 'Gmail API', 'Claude API', 'Tailwind CSS', 'Framer Motion'],
     gradient: 'from-amber-500 to-orange-600',
     story: {
