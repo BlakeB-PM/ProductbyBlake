@@ -48,8 +48,8 @@ export function Hero() {
             <div className="clear-both md:clear-none">
               {/* Stats row */}
               <div className="flex justify-start gap-8 sm:gap-12 md:gap-16 mb-8 sm:mb-10 animate-slide-up animation-delay-200">
-                <Stat value="6x" label="ARR growth" />
-                <Stat value="3x" label="User productivity" />
+                <Stat value="8x" label="ARR growth" />
+                <Stat value="48x" label="User productivity" />
                 <Stat value="74.5%" label="Engagement lift" />
               </div>
 
