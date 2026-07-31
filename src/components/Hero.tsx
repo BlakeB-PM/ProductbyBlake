@@ -39,7 +39,7 @@ export function Hero() {
 
             {/* Subheadline - Now part of flow on mobile */}
             <p className="text-sm sm:text-lg md:text-xl text-ink-600 leading-relaxed mb-6 sm:mb-8 animate-slide-up animation-delay-100 max-w-2xl md:max-w-none">
-              6+ years shipping B2B SaaS. I use{' '}
+              7+ years shipping B2B SaaS. I use{' '}
               <span className="font-medium text-ink-800">AI tools like Cursor</span>{' '}
               to prototype in code, validate with real users, and ship alongside my engineering teams.
             </p>
