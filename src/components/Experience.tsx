@@ -17,7 +17,7 @@ export function Experience() {
         'Scaled AI product revenue 8x in under 12 months',
         'Drove product-market fit from 12% to 53% through customer discovery',
         'Doubled the share of a target customer segment',
-        'Building and shipping production tooling alongside engineers',
+        'Creating a 0-1 managed automation service powered by AI with a human in the loop',
       ],
     },
     {
