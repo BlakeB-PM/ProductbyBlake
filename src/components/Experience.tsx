@@ -70,7 +70,7 @@ export function Experience() {
             Where I've worked
           </h2>
           <p className="text-ink-600 max-w-2xl">
-            6+ years in B2B SaaS, from ERP modernization to AI-powered automation. 
+            7+ years in B2B SaaS, from ERP modernization to AI-powered automation. 
             Consistently growing revenue, leading teams, and shipping products that delight customers.
           </p>
         </div>
