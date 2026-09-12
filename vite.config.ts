@@ -9,4 +9,11 @@ export default defineConfig({
   // e.g., base: '/portfolio/' if deploying to https://username.github.io/portfolio/
   // Leave as '/' for custom domain or root deployment
   base: '/',
+  // Dev server only - production is served by nginx (see Dockerfile).
+  // Pinned off the default 5173 because another local project runs there and
+  // registers a service worker on that origin, which then hijacks this site.
+  server: {
+    port: 5180,
+    strictPort: true,
+  },
 })
